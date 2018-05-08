@@ -1,0 +1,187 @@
+html {
+	height: 100%;
+}
+body {
+	margin: 0 auto;
+	height: 100%;
+	max-width: 640px;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, simsun, sans-serif;
+}
+
+/*@media screen and (max-width: 375px) {
+	.act-wrap {
+    	padding-bottom: 100px;
+	    background-color: #ea0229;
+	}
+}*/
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+.act-wrap {
+	position: relative;
+	width: 100%;
+	max-width: 640px;
+}
+/* 活动标题 */
+.act-wrap .act-title {
+	position: absolute;
+	top: 17px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+}
+.act-wrap .act-title img {
+	width: 85.3125%;
+}
+
+/* 转盘  */
+.act-wrap .lottery-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 47.03125% auto 0;
+	width: 80%;
+	text-align: center;
+}
+.act-wrap .lottery-wrap .arrow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 21.09375% auto 0;
+	width: 32.2265625%;
+	/*height: 221px;*/
+    padding-top: 43.1640625%;
+	background: url(../img/lottery/arrow.png) top center no-repeat;
+	background-size: contain;
+}
+
+/* 奖品 */
+.act-wrap .main-content {
+	position: relative;
+}
+.act-wrap .main-content .list {
+	position: absolute;
+	top: 0;
+	width: 100%;
+    height: 100%;
+	list-style: none;
+	color: #f12c20;
+	font-size: .3rem;
+}
+
+.act-wrap .main-content .item {
+	position: absolute;
+    width: 20%;
+}
+.act-wrap .main-content .item:nth-child(1) {	
+    left: 50%;
+    top: 11%;
+    transform: translateX(-50%);
+}
+.act-wrap .main-content .item:nth-child(2) {	
+	left: 70%;
+    top: 17%;
+    transform: translateX(-50%) rotate(36deg);
+}
+.act-wrap .main-content .item:nth-child(3) {	
+	left: 83%;
+    top: 37%;
+    transform: translateX(-50%) rotate(72deg);
+}
+.act-wrap .main-content .item:nth-child(4) {	
+    left: 82%;
+    top: 55%;
+    transform: translateX(-50%) rotate(110deg);
+}
+.act-wrap .main-content .item:nth-child(5) {	
+    left: 71%;
+    top: 76%;
+    transform: translateX(-50%) rotate(142deg);
+}
+.act-wrap .main-content .item:nth-child(6) {	
+	left: 50%;
+    top: 78%;
+    transform: translateX(-50%) rotate(180deg);
+}
+.act-wrap .main-content .item:nth-child(7) {	
+    left: 29%;
+    top: 76%;
+    transform: translateX(-50%) rotate(215deg);
+}
+.act-wrap .main-content .item:nth-child(8) {	
+	left: 17%;
+    top: 55%;
+    transform: translateX(-50%) rotate(252deg);
+}
+.act-wrap .main-content .item:nth-child(9) {	
+    left: 16%;
+    top: 36%;
+    transform: translateX(-50%) rotate(288deg);
+}
+.act-wrap .main-content .item:nth-child(10) {	
+    left: 30%;
+    top: 17%;
+    transform: translateX(-50%) rotate(320deg);
+}
+
+/*剩余抽奖次数按钮*/
+.act-wrap .lottery-wrap .lottery-btn {
+	position: relative;
+	margin-top: 20px;
+	padding-top: 13.28125%;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+	background: url(../img/lottery/btn.png) top center no-repeat;
+	background-size: contain;
+	color: #e81903;
+}
+.act-wrap .lottery-wrap .lottery-btn p {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: .26rem;
+}
+.act-wrap .lottery-wrap .lottery-btn strong {
+	font-size: .4rem;
+	font-weight: normal;
+}
+
+/* 活动说明  */
+.act-wrap .act-info-wrap {
+	position: absolute;
+	top: 0;
+    left: 0;
+    right: 0;
+    margin: 157.65625% auto 0;
+	width: 77.34375%;
+	z-index: 2;
+}
+.act-wrap .act-info-wrap .list {
+    margin: 2.8125% auto 0;
+    width: 95.95959%;
+    font-size: .16rem;
+    list-style: none;
+    color: #fff;
+}
+.act-wrap .act-info-wrap .item {
+	margin-bottom: 2.020202%;
+	word-break: break-all;
+}
+
+/* 活动底部  */
+.act-wrap .act-bottom {
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+}
