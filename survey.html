@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/survey.css" />
+  <title>收获您的心声</title>
+</head>
+
+<body>
+  <div class="act">
+    <!-- 背景图片-->
+    <div class="act__bg">
+      <img src="img/survey/survey_bg.jpg" alt="活动背景" />
+    </div>
+    <!-- 问卷问题 -->
+    <div class="act__question">
+      <div class="question__tt">1、您的年龄：</div>
+      <ul class="question__ct">
+        <li class="question__item"><input type="radio" name="question_1" class="question__radio"><label for="question_1" class="question__label">单选</label></li>
+        <li class="question__item"><input type="radio" name="question_1" class="question__radio"><label for="question_1" class="question__label">单选</label></li>
+        <li class="question__item"><input type="checkbox" name="question_2" class="question__checkbox"><label for="question_2" class="question__label">多选</label></li>
+        <li class="question__item"><input type="checkbox" name="question_2" class="question__checkbox"><label for="question_2" class="question__label">多选</label></li>
+      </ul>
+      <div id="j_questionBtn" class="question__btn question__btn--next"></div>
+      <div id="j_questionBtn" class="question__btn question__btn--submit"></div>
+    </div>
+  </div>
+  <div id="j_actDialog" class="act__dialog hidden">
+    <div class="dialog__ct">
+      <img src="img/survey/survey_over.png" alt="">
+      <a class="dialog__btn" href="lottery.html"></a>
+    </div>
+  </div>
+  <script src="js/base.js"></script>
+  <script src="js/zepto/zepto.min.js"></script>
+  <script src="js/survey.js"></script>
+</body>
+
+</html>

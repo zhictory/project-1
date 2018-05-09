@@ -1,0 +1,74 @@
+html {
+	height: 100%;
+}
+body {
+	margin: 0 auto;
+  height: 100%;
+	max-width: 750px;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, simsun, sans-serif;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+.act {
+	position: relative;
+  width: 100%;
+  max-width: 750px;
+  text-align: center;
+  background-color: #f5ecc9;
+}
+.act__bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.act__ct {
+  position: relative;
+  z-index: 10;
+}
+/* 活动标题 */
+.act__title {
+  display: inline-block;
+  margin-top: .7rem;
+  width: 3.69rem;
+  height: 0.7rem;
+}
+/* 活动广告 */
+.act__adv {
+  display: inline-block;
+  width: 5.86rem;
+  height: 3.51rem;
+  margin-top: .2rem;
+}
+/* 活动说明 */
+.act__desc {
+  box-sizing: border-box;
+  margin: .3rem .56rem 0;
+  text-align: left;
+}
+.desc__tt {
+  display: inline-block;
+  font-size: 0.3rem;
+  font-weight: bold;
+  color: #e60012;
+  line-height: 1.5em;
+  border-bottom: .03rem solid #e60012;
+}
+.desc__ct {
+  border-top: 1px solid #f5adaa;
+  margin-top: -1px;
+  padding: .1rem 0 .2rem;
+  color: #aa6800;
+  font-size: 0.26rem;
+  line-height: 2em;
+}
+/* 翻页 */
+.act__next {
+  display: inline-block;
+  margin-top: .15rem;
+  width: 0.5rem;
+  height: 0.35rem;
+}

@@ -6,68 +6,32 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" href="css/base.css" />
 		<link rel="stylesheet" href="css/lottery.css" />
-		<title>转盘活动</title>
+		<title>收获您的心声</title>
 	</head>
 	<body>
-		<div class="act-wrap">
+		<div class="act">
 			<!-- 背景图片-->
-			<div class="act-bg">
+			<div class="act__bg">
 				<img src="img/lottery/lottery_bg.jpg" alt="活动背景"/>	
 			</div>
 			
 			<!-- 活动标题 -->
-			<h1 class="act-title">
-				<img src="img/lottery/title.png" alt="幸运大转盘 礼品换不停"/>
-			</h1>
-			<div class="lottery-wrap">
-				<div class="lottery" >
-					<div id="j_lottery" class="main-content">
-						<!--<img class="lottery_bg" src="img/lottery/lottery_bg_1.png" alt="转盘"/>-->
-						
-						<img class="lottery_bg" src="img/lottery/lottery_bg.png" alt="转盘"/>
-						<ul class="list" id="j_lotteryList">
-							<li class="item">一等奖</li>
-							<li class="item"><img src="img/lottery/prize.png"/></li>
-							<li class="item">二等奖</li>
-							<li class="item">谢谢<br/>参与</li>
-							<li class="item">三等奖</li>
-							<li class="item">谢谢<br/>参与</li>
-							<li class="item">四等奖</li>
-							<li class="item">谢谢<br/>参与</li>
-							<li class="item">五等奖</li>
-							<li class="item">谢谢<br/>参与</li>
-						</ul>
-					</div>
-					
-					<img class="lottery_shadow" src="img/lottery/lottery_shadow.png" alt="转盘阴影"/>
-					
-					<!-- 开始箭头 -->
-					<span class="arrow j_startBtn" id="j_lotteryArrow"></span>
-				</div>
-				 
-				<!-- 抽奖按钮 -->
-				<div class="lottery-btn j_startBtn" id="j_lotteryTimes">
-					<p>您有<strong>3</strong>次抽奖机会</p>
-				</div>
+			<div class="act__lottery">
+				<div id="j_lottery" class="lottery__ct">						
+					<img src="img/lottery/lottery_plate.png" alt="转盘"/>
+				</div>					
+				<!-- 开始箭头 -->
+				<span class="lottery__point j_startBtn" id="j_lotteryArrow"></span>
 			</div>
 			
-			<div class="act-info-wrap">
+			<div class="act__info">
 				<!-- 活动说明 -->
-				<h2 class="title">
-					<img src="img/lottery/intro_title.png" alt="活动说明标题"/>
-				</h2>
+				<h2 class="title">奖品说明</h2>
 				<ul class="list">
-					<li class="item">1、XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.</li>
-					<li class="item">2、XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</li>
-					<li class="item">3、XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.</li>
-					<li class="item">4、XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</li>
-					<li class="item">5、XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</li>
-					<li class="item">6、XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</li>
+					<li class="item">一等奖：价值18888购车现金抵用券</li>
+					<li class="item">二等奖：购买欧蓝德享受2年0利率金融政策</li>
+					<li class="item">三等奖：价值8000置换欧蓝德补贴</li>
 				</ul>
-			</div>
-			
-			<div class="act-bottom">
-				<img src="img/lottery/bg_bottom.png"/>
 			</div>
 		</div>
 		<script src="js/base.js"></script>
