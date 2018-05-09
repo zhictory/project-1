@@ -42,13 +42,21 @@ img {
 
 .lottery__point {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -65%);
-  width: 1.68rem;
-  height: 2.1rem;
-  background: url(../img/lottery/lottery_point.png) top center no-repeat;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1.7rem;
+  height: 1.7rem;
   background-size: 100%;
+  cursor: pointer;
+}
+.lottery__point img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  cursor: default;
 }
 
 /* 奖品 */
@@ -76,12 +84,30 @@ img {
   line-height: 1.8em;
 }
 
-.act__info .list {
-    
-}
-
 .act__info .item {
   font-size: 0.26rem;
   color: #aa6800;
   line-height: 1.8em;
+}
+
+/* 弹窗 */
+.act__dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background: rgba(0, 0, 0, .65);
+}
+.dialog__ct {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 5.68rem;
+  height: 5.07rem;
 }

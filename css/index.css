@@ -18,6 +18,7 @@ img {
   max-width: 750px;
   text-align: center;
   background-color: #f5ecc9;
+  transition: opacity 1s ease .5s;
 }
 .act__bg img {
   position: absolute;
