@@ -1,3 +1,7 @@
+// 上一题
+$(document).on('click', '#j_questionPrev', ()=>{
+  history.back();
+});
 // 下一题
 $(document).on('click', '#j_questionNext', ()=>{
   let isAnyChecked = false;

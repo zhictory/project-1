@@ -6,6 +6,7 @@
 !(function (win, $) {
 	var defaultOpt = {
 		el: $('#j_lottery'),
+		subEl: $('#j_lotteryPlate'),
 		rotateDeg: 3 * 360	// 默认每次转3圈
 	};
 
@@ -25,8 +26,8 @@
 		},
 
 		/**
-		 * 运行转盘
-		 * @param {Object} deg 转盘角度
+		 * 运行指针
+		 * @param {Object} deg 指针角度
 		 * @param {Function} callback 回调函数
 		 */
 		run: function (deg, callback) {
@@ -45,7 +46,7 @@
 
 			_this.isLottery = true;
 
-			// 设置转盘所在角度
+			// 设置指针所在角度
 			var targetDeg = 0;
 			if (deg < _this.tempDeg) {
 				targetDeg = 360 - (_this.tempDeg - deg);
@@ -54,7 +55,7 @@
 			}
 			_this.tempDeg = _this.tempDeg + _this.opts.rotateDeg + targetDeg;
 
-			// 转动转盘
+			// 转动指针
 			_this.rotate(function () {
 				callback && callback();
 				_this.tempDeg = _this.tempDeg % 360;
@@ -66,7 +67,7 @@
 			});
 		},
 
-		// 旋转转盘
+		// 旋转指针
 		rotate: function (callback) {
 			var _this = this;
 			_this.opts.el.animate({
@@ -74,6 +75,9 @@
 			}, 2000, 'ease', function () {
 				callback && callback();
 			});
+			_this.opts.subEl.animate({
+				rotate: -(360*3) + 'deg'
+			}, 2000, 'ease', function () {});
 		}
 	};
 
@@ -95,13 +99,15 @@ $(function () {
 	var prizeList = [1, 2, 3, 4];
 	var prizeTextList = ['一等奖', '二等奖', '三等奖', '谢谢参与'];
 
-	// 开始抽奖
 	$('.j_startBtn').on('touchend', function () {
 		playGame();
 	}).on('click', function () {
 		playGame();
 	});
 
+	/**
+	 * 开发抽奖
+	 */
 	function playGame() {
 		// 正在抽奖或者抽奖结束
 		if (isGoing || isEnded) return;
@@ -114,13 +120,18 @@ $(function () {
 		globalData.prize = prizeList[tempIndex];
 		globalData.prizeText = prizeTextList[tempIndex];
 
-		// 转动转盘
+		// 转动指针
 		var deg = countDeg(globalData.prize);
 		lottery.run(deg, function () {
 			showPrizeDialog(globalData.prize);
 			isGoing = false;
 		});
 	}
+
+	/**
+	 * 显示获奖弹窗
+	 * @param {Number} prize 奖品 ID
+	 */
 	function showPrizeDialog(prize) {
 		switch (prize) {
 			case 1:
@@ -142,7 +153,7 @@ $(function () {
 	}
 
 	/**
-	 * 根据奖品等级计算转盘角度
+	 * 根据奖品等级计算指针角度
 	 * @param {Object} prize
 	 * @return {Number} deg
 	 */

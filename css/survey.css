@@ -54,8 +54,7 @@ img {
 .question__item {
   margin: .3rem 0 .3rem .2rem;
 }
-input.question__radio,
-input.question__checkbox {
+input.question__radio {
   background: url(../img/survey/survey_off.png) no-repeat;
   background-size: 100%;
   margin-right: .2rem;
@@ -63,25 +62,49 @@ input.question__checkbox {
   height: 0.36rem;
   vertical-align: middle;
 }
-input.question__radio:checked,
-input.question__checkbox:checked {
+input.question__checkbox {
+  box-sizing: border-box;
+  border: .02rem solid #ccc;
+  border-radius: .02rem;
+  margin-right: .2rem;
+  width: 0.36rem;
+  height: 0.36rem;
+  vertical-align: middle;
+
+}
+input.question__radio:checked {
   background: url(../img/survey/survey_on.png) no-repeat;
   background-size: 100%;
 }
-.question__btn {
-  margin: .5rem auto;
-  width: 3.6rem;
-  height: 0.7rem;
+input.question__checkbox:checked {
+  background: url(../img/survey/survey_checkbox_on.png) no-repeat;
   background-size: 100%;
-  background-repeat: no-repeat;
-  cursor: pointer;
+  border-color: #e91f2f;
 }
-.question__btn--next {
-  background-image: url(../img/survey/survey_next.png);
+.question__btn-wrap {
+  position: relative;
+  margin: .5rem auto;
+  text-align: center;
+  font-size: 0;
+}
+.question__btn {
+  display: inline-block;
+  margin: 0 .1rem;
+  border-radius: .07rem;
+  width: 2.8rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.26rem;
+  background-color: #f06671;
+  cursor: pointer;
+  vertical-align: middle;
 }
 .question__btn--submit {
-  background-image: url(../img/survey/survey_submit.png);
+  background-color: #e60012;
 }
+
 /* 弹窗 */
 .act__dialog {
   position: fixed;

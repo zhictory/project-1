@@ -30,6 +30,27 @@ img {
   position: relative;
   z-index: 10;
 }
+/* 获奖名单 */
+.act__lottery-list {
+  position: absolute;
+  left: .9rem;
+  top: 0.15rem;
+  margin: 0 auto;
+  width: 5.7rem;
+  height: 0.3rem;
+  font-size: 0.2rem;
+  color: #aa6800;
+  line-height: 1.5em;
+  overflow: hidden;
+  text-align: left;
+  text-indent: .5em;
+  background-color: rgba(247, 240, 213, 1);
+}
+.act__lottery-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 /* 活动标题 */
 .act__title {
   display: inline-block;
@@ -61,15 +82,21 @@ img {
 .desc__ct {
   border-top: 1px solid #f5adaa;
   margin-top: -1px;
-  padding: .1rem 0 .2rem;
+  padding: .1rem 0 0;
   color: #aa6800;
   font-size: 0.26rem;
   line-height: 2em;
 }
 /* 翻页 */
 .act__next {
-  display: inline-block;
-  margin-top: .15rem;
-  width: 0.5rem;
-  height: 0.35rem;
+  display: block;
+  margin: .4rem auto;
+  border-radius: .04rem;
+  width: 3.6rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  cursor: pointer;
+  font-size: 0.3rem;
+  background-color: #aa6800;
+  color: #fff;
 }
